@@ -4,7 +4,7 @@ import hashlib
 
 port = input("Enter port:")
 while(True):
-        url = "http://docker.hackthebox.eu:" + port + "/"
+        url =("http://docker.hackthebox.eu:" + port + "/")
         r = requests.session()
         out = r.get(url)
         soup = BeautifulSoup(out.content,"html.parser")
